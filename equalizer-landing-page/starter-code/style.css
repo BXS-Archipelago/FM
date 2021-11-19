@@ -1,55 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
 
 body {
+  padding: 0;
   margin: 0;
-  padding: 0 6rem;
   box-sizing: border-box;
-  background-color: #fcfaf9;
-  background-image: url(./img/bg-main-desktop.png);
+  background-image: url(./img/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 h1 {
   font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
-  font-size: 88px;
   font-weight: 700;
+  letter-spacing: 1px;
   line-height: 88px;
-  letter-spacing: 1px;
-  position: relative;
-  margin-right: 10rem;
+  font-size: 88px;
 }
 
-h2 {
+.text-body1 {
   font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
-  font-size: 40px;
   font-weight: 400;
-  line-height: 52px;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
-  font-size: 20px;
   line-height: 34px;
-  letter-spacing: 1px;
+  font-size: 20px;
 }
 
-.logo {
-  margin-top: 3rem;
-  padding-bottom: 5rem;
-  height: 2rem;
-}
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 2.5rem;
+  }
 
-.img-top-right {
-  position: absolute;
-  top: -40px;
-  right: 5px;
-}
+  h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
 
-.img-container {
-  display: flex;
-  justify-content: space-between;
-}
+  .text-body1 {
+    font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.4rem;
+    font-size: 1rem;
+  }
+  .top-section {
+    padding: 1rem;
+  }
 
-.main-text-container {
-  max-width: 70vw;
+  .mid-section {
+    position: relative;
+    margin-top: 7rem;
+  }
+
+  .app-image {
+    position: absolute;
+    top: -100px;
+    max-width: 200px;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .mid-section-bg {
+    background-image: url(./img/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-color: #191826;
+    background-position: top;
+    height: 600px;
+    background-size: 250px;
+    z-index: 0;
+  }
 }
